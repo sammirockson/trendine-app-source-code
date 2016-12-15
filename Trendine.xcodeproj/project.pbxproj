@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A31DE60A1E028DA9008C8BB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31DE6091E028DA9008C8BB0 /* AppDelegate.swift */; };
+		A31DE60C1E028DA9008C8BB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31DE60B1E028DA9008C8BB0 /* ViewController.swift */; };
+		A31DE60F1E028DAA008C8BB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31DE60D1E028DAA008C8BB0 /* Main.storyboard */; };
+		A31DE6121E028DAB008C8BB0 /* Trendine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A31DE6101E028DAA008C8BB0 /* Trendine.xcdatamodeld */; };
+		A31DE6141E028DAC008C8BB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31DE6131E028DAC008C8BB0 /* Assets.xcassets */; };
+		A31DE6171E028DAC008C8BB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31DE6151E028DAC008C8BB0 /* LaunchScreen.storyboard */; };
+		A31DE6221E028DAE008C8BB0 /* TrendineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31DE6211E028DAE008C8BB0 /* TrendineTests.swift */; };
+		A31DE62D1E028DAF008C8BB0 /* TrendineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31DE62C1E028DAF008C8BB0 /* TrendineUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A31DE61E1E028DAC008C8BB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A31DE5FE1E028DA3008C8BB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A31DE6051E028DA4008C8BB0;
+			remoteInfo = Trendine;
+		};
+		A31DE6291E028DAF008C8BB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A31DE5FE1E028DA3008C8BB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A31DE6051E028DA4008C8BB0;
+			remoteInfo = Trendine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A31DE6061E028DA9008C8BB0 /* Trendine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trendine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31DE6091E028DA9008C8BB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A31DE60B1E028DA9008C8BB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A31DE60E1E028DAA008C8BB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A31DE6111E028DAB008C8BB0 /* Trendine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Trendine.xcdatamodel; sourceTree = "<group>"; };
+		A31DE6131E028DAC008C8BB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A31DE6161E028DAC008C8BB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A31DE6181E028DAC008C8BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A31DE61D1E028DAC008C8BB0 /* TrendineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrendineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31DE6211E028DAE008C8BB0 /* TrendineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendineTests.swift; sourceTree = "<group>"; };
+		A31DE6231E028DAE008C8BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A31DE6281E028DAF008C8BB0 /* TrendineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrendineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31DE62C1E028DAF008C8BB0 /* TrendineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendineUITests.swift; sourceTree = "<group>"; };
+		A31DE62E1E028DAF008C8BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A31DE6031E028DA4008C8BB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31DE61A1E028DAC008C8BB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31DE6251E028DAF008C8BB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A31DE5FD1E028DA3008C8BB0 = {
+			isa = PBXGroup;
+			children = (
+				A31DE6081E028DA9008C8BB0 /* Trendine */,
+				A31DE6201E028DAD008C8BB0 /* TrendineTests */,
+				A31DE62B1E028DAF008C8BB0 /* TrendineUITests */,
+				A31DE6071E028DA9008C8BB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A31DE6071E028DA9008C8BB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A31DE6061E028DA9008C8BB0 /* Trendine.app */,
+				A31DE61D1E028DAC008C8BB0 /* TrendineTests.xctest */,
+				A31DE6281E028DAF008C8BB0 /* TrendineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A31DE6081E028DA9008C8BB0 /* Trendine */ = {
+			isa = PBXGroup;
+			children = (
+				A31DE6091E028DA9008C8BB0 /* AppDelegate.swift */,
+				A31DE60B1E028DA9008C8BB0 /* ViewController.swift */,
+				A31DE60D1E028DAA008C8BB0 /* Main.storyboard */,
+				A31DE6131E028DAC008C8BB0 /* Assets.xcassets */,
+				A31DE6151E028DAC008C8BB0 /* LaunchScreen.storyboard */,
+				A31DE6181E028DAC008C8BB0 /* Info.plist */,
+				A31DE6101E028DAA008C8BB0 /* Trendine.xcdatamodeld */,
+			);
+			path = Trendine;
+			sourceTree = "<group>";
+		};
+		A31DE6201E028DAD008C8BB0 /* TrendineTests */ = {
+			isa = PBXGroup;
+			children = (
+				A31DE6211E028DAE008C8BB0 /* TrendineTests.swift */,
+				A31DE6231E028DAE008C8BB0 /* Info.plist */,
+			);
+			path = TrendineTests;
+			sourceTree = "<group>";
+		};
+		A31DE62B1E028DAF008C8BB0 /* TrendineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A31DE62C1E028DAF008C8BB0 /* TrendineUITests.swift */,
+				A31DE62E1E028DAF008C8BB0 /* Info.plist */,
+			);
+			path = TrendineUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A31DE6051E028DA4008C8BB0 /* Trendine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A31DE6311E028DAF008C8BB0 /* Build configuration list for PBXNativeTarget "Trendine" */;
+			buildPhases = (
+				A31DE6021E028DA4008C8BB0 /* Sources */,
+				A31DE6031E028DA4008C8BB0 /* Frameworks */,
+				A31DE6041E028DA4008C8BB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Trendine;
+			productName = Trendine;
+			productReference = A31DE6061E028DA9008C8BB0 /* Trendine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A31DE61C1E028DAC008C8BB0 /* TrendineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A31DE6341E028DAF008C8BB0 /* Build configuration list for PBXNativeTarget "TrendineTests" */;
+			buildPhases = (
+				A31DE6191E028DAC008C8BB0 /* Sources */,
+				A31DE61A1E028DAC008C8BB0 /* Frameworks */,
+				A31DE61B1E028DAC008C8BB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A31DE61F1E028DAC008C8BB0 /* PBXTargetDependency */,
+			);
+			name = TrendineTests;
+			productName = TrendineTests;
+			productReference = A31DE61D1E028DAC008C8BB0 /* TrendineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A31DE6271E028DAF008C8BB0 /* TrendineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A31DE6371E028DAF008C8BB0 /* Build configuration list for PBXNativeTarget "TrendineUITests" */;
+			buildPhases = (
+				A31DE6241E028DAF008C8BB0 /* Sources */,
+				A31DE6251E028DAF008C8BB0 /* Frameworks */,
+				A31DE6261E028DAF008C8BB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A31DE62A1E028DAF008C8BB0 /* PBXTargetDependency */,
+			);
+			name = TrendineUITests;
+			productName = TrendineUITests;
+			productReference = A31DE6281E028DAF008C8BB0 /* TrendineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A31DE5FE1E028DA3008C8BB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = RockzAppStudio;
+				TargetAttributes = {
+					A31DE6051E028DA4008C8BB0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3V56TFD2QD;
+						ProvisioningStyle = Automatic;
+					};
+					A31DE61C1E028DAC008C8BB0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3V56TFD2QD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A31DE6051E028DA4008C8BB0;
+					};
+					A31DE6271E028DAF008C8BB0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3V56TFD2QD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A31DE6051E028DA4008C8BB0;
+					};
+				};
+			};
+			buildConfigurationList = A31DE6011E028DA3008C8BB0 /* Build configuration list for PBXProject "Trendine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A31DE5FD1E028DA3008C8BB0;
+			productRefGroup = A31DE6071E028DA9008C8BB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A31DE6051E028DA4008C8BB0 /* Trendine */,
+				A31DE61C1E028DAC008C8BB0 /* TrendineTests */,
+				A31DE6271E028DAF008C8BB0 /* TrendineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A31DE6041E028DA4008C8BB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A31DE6171E028DAC008C8BB0 /* LaunchScreen.storyboard in Resources */,
+				A31DE6141E028DAC008C8BB0 /* Assets.xcassets in Resources */,
+				A31DE60F1E028DAA008C8BB0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31DE61B1E028DAC008C8BB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31DE6261E028DAF008C8BB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A31DE6021E028DA4008C8BB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A31DE6121E028DAB008C8BB0 /* Trendine.xcdatamodeld in Sources */,
+				A31DE60C1E028DA9008C8BB0 /* ViewController.swift in Sources */,
+				A31DE60A1E028DA9008C8BB0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31DE6191E028DAC008C8BB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A31DE6221E028DAE008C8BB0 /* TrendineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31DE6241E028DAF008C8BB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A31DE62D1E028DAF008C8BB0 /* TrendineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A31DE61F1E028DAC008C8BB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A31DE6051E028DA4008C8BB0 /* Trendine */;
+			targetProxy = A31DE61E1E028DAC008C8BB0 /* PBXContainerItemProxy */;
+		};
+		A31DE62A1E028DAF008C8BB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A31DE6051E028DA4008C8BB0 /* Trendine */;
+			targetProxy = A31DE6291E028DAF008C8BB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A31DE60D1E028DAA008C8BB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A31DE60E1E028DAA008C8BB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A31DE6151E028DAC008C8BB0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A31DE6161E028DAC008C8BB0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A31DE62F1E028DAF008C8BB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A31DE6301E028DAF008C8BB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A31DE6321E028DAF008C8BB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3V56TFD2QD;
+				INFOPLIST_FILE = Trendine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RockzAppSudio.Trendine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A31DE6331E028DAF008C8BB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3V56TFD2QD;
+				INFOPLIST_FILE = Trendine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RockzAppSudio.Trendine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A31DE6351E028DAF008C8BB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3V56TFD2QD;
+				INFOPLIST_FILE = TrendineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RockzAppSudio.TrendineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trendine.app/Trendine";
+			};
+			name = Debug;
+		};
+		A31DE6361E028DAF008C8BB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3V56TFD2QD;
+				INFOPLIST_FILE = TrendineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RockzAppSudio.TrendineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trendine.app/Trendine";
+			};
+			name = Release;
+		};
+		A31DE6381E028DAF008C8BB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3V56TFD2QD;
+				INFOPLIST_FILE = TrendineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RockzAppSudio.TrendineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Trendine;
+			};
+			name = Debug;
+		};
+		A31DE6391E028DAF008C8BB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3V56TFD2QD;
+				INFOPLIST_FILE = TrendineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RockzAppSudio.TrendineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Trendine;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A31DE6011E028DA3008C8BB0 /* Build configuration list for PBXProject "Trendine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A31DE62F1E028DAF008C8BB0 /* Debug */,
+				A31DE6301E028DAF008C8BB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A31DE6311E028DAF008C8BB0 /* Build configuration list for PBXNativeTarget "Trendine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A31DE6321E028DAF008C8BB0 /* Debug */,
+				A31DE6331E028DAF008C8BB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A31DE6341E028DAF008C8BB0 /* Build configuration list for PBXNativeTarget "TrendineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A31DE6351E028DAF008C8BB0 /* Debug */,
+				A31DE6361E028DAF008C8BB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A31DE6371E028DAF008C8BB0 /* Build configuration list for PBXNativeTarget "TrendineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A31DE6381E028DAF008C8BB0 /* Debug */,
+				A31DE6391E028DAF008C8BB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A31DE6101E028DAA008C8BB0 /* Trendine.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A31DE6111E028DAB008C8BB0 /* Trendine.xcdatamodel */,
+			);
+			currentVersion = A31DE6111E028DAB008C8BB0 /* Trendine.xcdatamodel */;
+			path = Trendine.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A31DE5FE1E028DA3008C8BB0 /* Project object */;
+}
