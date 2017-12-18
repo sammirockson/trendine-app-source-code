@@ -1,0 +1,20 @@
+PODS:
+  - BmobSDK (1.7.2)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SwiftyStoreKit (0.6.0)
+
+DEPENDENCIES:
+  - BmobSDK
+  - SDWebImage
+  - SwiftyStoreKit
+
+SPEC CHECKSUMS:
+  BmobSDK: e188cb31d6a8417ab668aee821da227d7512b865
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SwiftyStoreKit: f47820a774eb94dcb2880f50a76f9533b2c282b9
+
+PODFILE CHECKSUM: 9a623f148d400a66d9eb71b686875c3f538f22c7
+
+COCOAPODS: 1.1.1

@@ -1,0 +1,6 @@
+framework module Pods_TrendineUITests {
+  umbrella header "Pods-TrendineUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

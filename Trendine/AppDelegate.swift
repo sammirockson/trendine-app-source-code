@@ -8,16 +8,187 @@
 
 import UIKit
 import CoreData
+import Contacts
+import UserNotifications
+import AudioToolbox
+
+
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenterDelegate{
 
     var window: UIWindow?
+    var store = CNContactStore()
+    
+    
+    func checkAccessStatus(completionHandler: @escaping (_ accessGranted: Bool) -> Void) {
+        let authorizationStatus = CNContactStore.authorizationStatus(for: CNEntityType.contacts)
+        
+        switch authorizationStatus {
+        case .authorized:
+            completionHandler(true)
+        case .denied, .notDetermined:
+            self.store.requestAccess(for: CNEntityType.contacts, completionHandler: { (access, accessError) -> Void in
+                if access {
+                    completionHandler(access)
+                } else {
+                    print("access denied")
+                }
+            })
+        default:
+            completionHandler(false)
+        }
+    }
+    
+    class func sharedDelegate() -> AppDelegate {
+        
+        return UIApplication.shared.delegate as! AppDelegate
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        registerForRemoteNotification()
+
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        Bmob.register(withAppKey: "b6240dda812f1eb40b31ddc094f11118")
+
+
+        if BmobUser.current() == nil {
+            
+            window?.rootViewController = LoginViewController()
+            
+    
+            
+        }else{
+            
+         
+            window?.rootViewController = CustomTabbarController()
+            
+        
+            
+        }
+        
+        
+        UINavigationBar.appearance().barStyle = .black
+        UINavigationBar.appearance().tintColor = UIColor.white
+        
+        
+        
         return true
+    }
+    
+
+    func registerForRemoteNotification() {
+        
+        //this checks if the user is on iOS 10.0
+        
+        if #available(iOS 10.0, *) {
+            
+            let center  = UNUserNotificationCenter.current()
+            center.delegate = self
+            center.requestAuthorization(options: [.sound, .alert, .badge]) { (granted, error) in
+                if error == nil{
+                    UIApplication.shared.registerForRemoteNotifications()
+                    
+                    UserDefaults.standard.setValue(true, forKey: "AlertSoundAll")
+                    UserDefaults.standard.setValue(true, forKey: "ShowBannerAll")
+
+
+                }
+            }
+        }
+            
+      
+    }
+    
+    
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        
+        let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
+        let lowerCase = deviceTokenString.lowercased()
+        
+        if let currentUser = BmobUser.current() {
+            
+            let installation = BmobInstallation()
+            installation.setDeviceTokenFrom(deviceToken)
+            installation.setObject(currentUser, forKey: "user")
+            installation.setObject(currentUser.objectId, forKey: "userId")
+            installation.saveInBackground(resultBlock: { (success, error) in
+                if error == nil{
+                    
+                    print("installation saved")
+                    
+                    
+                }else{
+                    
+                    print("error saving install\(error?.localizedDescription as Any)")
+                    installation.saveInBackground()
+                    
+                }
+            })
+            
+        }
+     
+        
+        
+        
+        
+        
+        
+        if UserDefaults.standard.object(forKey: "deviceTokenString") == nil {
+            
+            UserDefaults.standard.setValue(lowerCase, forKey: "deviceTokenString")
+
+            
+        }else{
+            
+            UserDefaults.standard.removeObject(forKey: "deviceTokenString")
+            UserDefaults.standard.setValue(lowerCase, forKey: "deviceTokenString")
+ 
+            
+        }
+
+        
+        if UserDefaults.standard.object(forKey: "deviceTokenData") == nil {
+            
+            UserDefaults.standard.setValue(deviceToken, forKeyPath: "deviceTokenData")
+  
+            
+        }else{
+            
+            
+            UserDefaults.standard.removeObject(forKey: "deviceTokenData")
+            UserDefaults.standard.setValue(deviceToken, forKeyPath: "deviceTokenData")
+ 
+            
+        }
+        
+
+        
+        
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+    }
+    
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+        AudioServicesPlayAlertSound(1110)
+//        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "reloadMessages"), object: nil)
+        NotificationCenter.default.post(name: Notification.Name("reloadMessages"), object: nil)
+
+        
+        let badgeNumber = UIApplication.shared.applicationIconBadgeNumber
+        UIApplication.shared.applicationIconBadgeNumber = badgeNumber + 1
+        
+        
+
+       
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -28,6 +199,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        UIApplication.shared.applicationIconBadgeNumber = 0
+
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -35,6 +209,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
+        
+        UIApplication.shared.applicationIconBadgeNumber = 0
+        
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 
